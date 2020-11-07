@@ -1,231 +1,477 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Lydia's Healing Art</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+  <head>
+    <meta charset="utf-8">
+    <title>Blessings for Homes</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <!--Libs css-->
+    <link rel="stylesheet" href="css/libs.css">
+    <!--Main css-->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="dark-load">
+    <header class="top-nav page-header" id="top-nav">
+     
+        <nav class="top-menu">
+          
+        </nav>
+        <!-- Start mobile menu-->
+        <div id="mobile-menu">
+          <div class="inner-wrap">
 
-        <!-- all css here -->
-        <!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
-        <!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <!-- bxslider css -->
-        <link rel="stylesheet" href="css/jquery.bxslider.css">
-        <!-- magnific popup css -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/dl-menu.css">
-        <!-- style css -->
-        <link rel="stylesheet" href="style.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
-        <!-- modernizr css -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-    </head>
-    <body>
-       <!-- preloader Start -->
-    <div id="preloader">
-        <div id="status">
-          <img src="images/loader.gif" id="preloader_image" alt="loader"> 
+          </div>
         </div>
+        <!-- End mobile menu-->
+      </div>
+    </header>
+    <!-- Start full screen top nav-->
+    <div class="fullscreen-topnav rotate background-image" data-image="img/bg1.jpg">
+    
+      <!-- Start container-->
+      <div class="container-fluid height-half-60">
+        <div class="row no-padding-bottom height-full">
+          <div class="items height-full">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 video-play height-full">
+              <div class="video-section table">
+                <div class="table-cell"><a class="icon-play anim-shadow" href="https://www.youtube.com/watch?v=lm4OJxGQm_E"><i class="pe-7s-play"></i></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-full-screen height-full">
+              <div class="content table">
+                <div class="table-cell">
+                  <h3>Start project:</h3>
+                  <form class="contact-form-sub">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="text" name="Email" placeholder="Email *">
+                    <select class="demo-default" name="Servises" id="selectize">
+                      <option value="">Choose service:</option>
+                      <option value="Services">Services 1</option>
+                      <option value="Services 2">Services 2</option>
+                      <option value="Services 3">Services 3</option>
+                    </select>
+                    <textarea name="Message" placeholder="Message *" cols="3" rows="5"></textarea>
+                    <p class="success-msg hidden notify">Your order has been send</p>
+                    <p class="success-msg hidden notify">Error sending order</p>
+                    <input class="btn" type="submit" value="Send message">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End container-->
     </div>
 
-        <!--Header area start here-->
-        <header id="sticky">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="logo-area">
-                          <a href="index.html" class="non-scrool"> <img src="images/flyingbird.gif" width="120" height="120" alt=""><img src="images/logo/logo_lydia.png" alt=""/></a> 
-                                  
-                            <a href="#" class="scrool"><img src="images/flyingbird.gif" width="120" height="120" alt=""><img src="images/logo/logo-dark_lydia.png" alt=""/> </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                       <div class="prs_menu_main_wrapper">
-                    <nav class="navbar navbar-default">
-                      <div id="dl-menu" class="xv-menuwrapper responsive-menu">
-                          <button class="dl-trigger"><img src="images/bars.png" alt="bar_png"></button>
-                          <div class="clearfix"></div>
-                          <ul class="dl-menu">
-                              <li class="parent"><a href="index.html">Home</a></li>
-                              <li class="parent"><a href="about.html">About</a></li>
-                             <li class="parent"><a href="taohands.html">Tao Hands Practitioner</a></li>
-                             <li class="parent"><a href="#">Other Services</a>
-                                 <ul class="lg-submenu">
-                                      <li><a href="taocalligraphy.html">Tao Calligraphy Practitioner</a></li>
-                                      <li><a href="guanyin.html">Guan Yin Blessings</a></li>
-                                      <li><a href="soulreadings.html">Soul Readings</a></li>
-                                  </ul>
-                              </li>
-                              <li class="parent"><a href="contact.html">Consultations</a>
-                              </li>
-                          </ul>
-                      </div><!-- /dl-menuwrapper -->
-                  </nav>
-                </div>
-                        <div class="header-right">
-                            <span class="con-tc"><i class="fa fa-phone" aria-hidden="true"></i>+1 999 9999 9999</span>
-                            <a href="#" class="btn1 top_navi_btn"><span>CONTACT</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--Header area end here-->
-        <!--Slider area start here-->
-        <section class="slider-area bg-img jarallax" style="padding-bottom: 50px">
+
+
+    <!-- End full screen top nav-->
+    <!-- Start slider section-->
+   <!-- <div class="slider" id="top">
+      <div class="player" id="bgndVideo" data-property="{videoURL:'https://www.youtube.com/watch?v=l6mvVKNk-D0',containment:'.full-slider', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></div>
+       <div class="full-slider background-image intro" >  -->
+        <!-- Start slide-->
+      <!--  <div class="slide bg-mask-small full-vh">
+          <div class="container-slide vertical-align center">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="content">
-      
-                            <h2 class="wow animated fadeInLeft" data-wow-duration="1.5s">Do you want to be healthier and happier? Are you seeking true and lasting change?</h2>
-                            <p class="wow animated fadeInUp" data-wow-duration="2s">Whether your challenge concerns health, relationships, finances or business, Tao Healing Hands offers a solution.  Based on quantum physics, Tao Healing Hands sends high frequency and vibration to a person’s energy field, enabling positive, true, and lasting transformation.</p>
-                            <a href="readmore.html" class="btn1 wow animated zoomIn" data-wow-duration="2.5s"><span>Read More</span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                        <div class="slider-right-side wow animated fadeInUp" data-wow-duration="1.5s">
-                            <div class="photo-slider">
-                                <div class="photo-item"><img src="images/slider/t_1.png" alt=""/></div>
-                                <div class="photo-item"><img src="images/slider/t_2.png" alt=""/></div>
-                                <div class="photo-item"><img src="images/slider/t_3.png" alt=""/></div>
-                                <div class="photo-item"><img src="images/slider/t_4.png" alt=""/></div>
-                                <div class="photo-item"><img src="images/slider/t_5.png" alt=""/></div>
-                                <div class="photo-item"><img src="images/slider/t_6.png" alt=""/></div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="heading-title-big" style="color: #c9700a">How Toxic Is Your Home?</h1>
+                  <div class="description-slide"> 
+                  	<br>
+                  	<ul>
+                  		<h2 style="color: #db4227">Stagnant energy in your home?</h2>
+						<h2 style="color: #deba2a">Areas that no one – even the pets –  want to be in?</h2>
+						<h2 style="color: #30db27">Moved in, excited at the new place, but a month later the boxes aren’t unpacked?</h2>
+					</ul>
+                  	</div>
+                  <div class="buttons-section"><a href="https://www.youtube.com/watch?v=l6mvVKNk-D0"><i class="pe-7s-play"></i></a></div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--Slider area end here-->
+          </div>
+        </div>
+      </div>
+    </div> -->
 
-       
-        <!--Footer area start here-->
-        <footer>
-            <div class="footer-top  section2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <div class="about-spa">
-                                <span>Contsct Us</span>
-                                <h2>Get In Touch</h2>
-                                <p>Nisi elit consequat ipsum, akshay handge nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputat.</p>
-                            </div>
-                            <div class="subs-box">
-                                <form>
-                                    <label>subscribe our newsletter</label>
-                                    <input type="email" placeholder="Email Address *">
-                                    <button><i class="fa fa-long-arrow-right"></i></button>
-                                </form>
-                            </div>
-                            <div class="con-info">
-                                <ul>
-                                    <li><span><i class="fa fa-phone"></i></span><p>Call : +123 456 789</p></li>
-                                    <li><span><i class="fa fa-envelope"></i></span><p>Email :<strong> book@example.com</strong></p></li>
-                                    <li><span><i class="fa fa-clock-o"></i></span><p>Opening Times : 11:30 - 22:00 Clock</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                            <div class="map-area">
-                                <div id="map" class="map-full" style="width:100%; height:450px;"></div>
-                                <address>
-                                    <strong>Address</strong>
-                                    <p>123 Street, Dewas House, Country, 12345</p>
-                                </address>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Start slider section-->
+    <div class="slider" id="top">
+      <div class="player" id="bgndVideo" data-property="{videoURL:'https://www.youtube.com/watch?v=pGbIOC83-So',containment:'.full-slider', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></div>
+      <div class="full-slider background-image intro" data-image="img/bg2_2.jpg">
+        <!-- Start slide-->
+        <div class="slide bg-mask-small full-vh">
+          <div class="container-slide vertical-align center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                	<h1 class="heading-title-big" style="color: #c9700a">How Toxic Is Your Home?</h1>
+                  <br>
+                  	<ul>
+                  		<h2 style="color: #db4227">Stagnant energy in your home?</h2>
+						<h2 style="color: #deba2a">Are there areas that no one – even the pets –  want to be in?</h2>
+						<h2 style="color: #30db27">Moved in, Excited about the new place! <br>...and a month later the boxes aren’t unpacked?</h2>
+					</ul>
+                  	</div>
+                  <div class="buttons-section"><a href="https://www.youtube.com/watch?v=pGbIOC83-So"><i class="pe-7s-play"></i></a></div>
                 </div>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="copyright">
-                                <p>Copyright © Lydia's Healing Art 2020. All rights reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="bot-social">
-                                <ul class="list-inline">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<!--Section quote-->
+    <section class="services-section background-image bg-dark-section" id="services" data-image="img/bg2_1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="heading-title small-heading center">
+              <h2><span>Since we moved here 10 years ago I have rarely felt at peace in this house and have frequently thought seriously about moving. (But after the Home Blessing). I am now comfortable in this beautiful property.</span></h2>
+              <p>- GL</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Section work progress-->
+   <!-- <section class="section-work-progress background-image bg-dark-section" data-image="img/bg1.jpg">
+      <div class="container">
+        <div class="row">
+            <div class="heading-title">
+              <h2>How old <span>is your home?</span></h2>
+              <div ><p>Was it lived in before you moved in? Let’s go deeper – literally:  the land your home is on is how old, 4 Billion years?  What are the odds that there hasn’t been a fire, perhaps a flood.  An ambush – human or animal – leaves those vibrations in the ground.  Earthquakes? The flow of energy through the land is blocked, or disrupted.</p></div>
+            </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--Section why chose us-->
+    <section class="section-choose-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+
+            <div class="heading-title center">
+              <h2>How old <span>is your home?</span></h2>
+              <div class="small-desd">The answer is actually from <span>Quantum Physics.</span></div>
+              <p>Was it lived in before you moved in? Let’s go deeper – literally:  the land your home is on is how old, 4 Billion years?  What are the odds that there hasn’t been a fire, perhaps a flood.  An ambush – human or animal – leaves those vibrations in the ground.  Earthquakes? The flow of energy through the land is blocked, or disrupted.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+	<!--Section quote-->
+    <section class="services-section background-image bg-dark-section" id="services" data-image="img/bg2_2.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="heading-title small-heading center">
+              <h2><span>My husband felt and saw negative energies in areas in our home.  These energies affected the vibration of our home, our sleep. And our cat was on constant watch.  The night that Terry blessed our home, we slept like babies.  I felt like we were enveloped in light. My family and I are sensitive to energy and we immediately felt the change.</span></h2>
+              <p>- Micaela</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!--Start into slider-->
+    <div class="into-slider background-image" id="into" data-image="img/bgn1.jpg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="item">
+              <h4>Consider how the world has changed since Covid-19. Many are Social Separating – working from home. Social workers and trauma workers are reporting increased physical abuse.</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="img/fire_lg.jpg" style="width: 100%; height: 100%">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="img/covid_lg.jpg" style="width: 100%; height: 100%">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="img/riot_lg.jpg" style="width: 100%; height: 100%">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--End into slider-->
+
+	<!--Section quote-->
+    <section class="services-section background-image bg-dark-section" id="services" data-image="img/bg3_2.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="heading-title small-heading center">
+              <h2><span>I always felt frozen when I came inside, because of the relationship with the other person I share the apartment with. That changed literally overnight – after the Home Blessing.</span></h2>
+              <p>- KB</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Start into slider-->
+    <div class="into-slider background-image" id="into" data-image="img/bgn1.jpg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="item">
+              <img src="img/drinking.jpg" style="width: 100%; height: 100%">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+        	<h4>Our coping mechanisms aren’t coping as well as they used to – so alcohol has increased over 30% and marijuana use, 46%. (statistics as of 24 September 2020)</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <img src="img/naturaldisastor.jpg" style="width: 100%; height: 100%">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <h4>And…there’s more worry about riots, fires on the West of all North America, and hurricanes again destroying the East Coast of the United States…with increasing frequency and velocity.</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--End into slider-->
+
+    <!--Section trigger-->
+    <section class="section-trigger bg-white-section white-70 background-image" data-image="img/bg3.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="buttons-section center"><a class="btn accent-btn large-btn" href="#">Here are Ways to Transform Your Home</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section why chose us-->
+    <section class="section-choose-us">
+      <div class="container">
+        <div class="row">
+        	<div>
+          <!-- <div class="col-md-8 col-md-push-2"> -->
+
+            <div class="heading-title center">
+              <h2>How can my home’s energy be changed <span style="color: #b86e00"><br>from a distance?</span></h2>
+              <div class="small-desd">The answer is actually from <span>Quantum Physics.</span></div>
+              <img src="img/quantum_2.png" style="width: 50%; height: auto; padding-top: 20px">
+              <p>Although we experience much of our world as solid matter, physicists have determined that Nothing is really solid.  Everything in the universe is made up of molecules which are composed of atoms. The electrons, protons and neutrons of atoms all vibrate at very high frequencies. So everything in our house is made up of atoms at different frequencies. Anger,  pain, are the blocked or stagnant energies in a home are low frequency vibrations.<br><br>
+              During a Home Blessing, transmissions of the high frequencies of Love, Peace, Harmony, Compassion, Empathy and Oneness change low frequencies that make the home feel unsupportive, stagnant or unhealthy. Home Blessings transform the negative information. People experience the difference, time after time.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+	<!--Section quote-->
+    <section class="services-section background-image bg-dark-section" id="services" data-image="img/bg3_purple.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading-title small-heading center">
+              <h2><span>I had recently moved and was concerned about negative energies that the last tenant had left.  I really wanted a fresh start, so I contacted Terry.</span></h2><br>
+              <h2><span>Without stepping foot on the property, without ever having been here, he asked questions as if he were walking around the property in person. It was like he walked down to the creek that runs behind the house and back up again and through the house, asking questions and sharing what he perceived - I was amazed.</span></h2><br>
+           	<h2><span>Wherever he sensed negative energy, he would describe how he saw the darkness there changing into golden light. Under the house, by that tree, down at the creek and inside. I am very grateful to Terry for what he did here (without coming here physically). I feel a sense of peace I haven't had in any of my other homes.</span></h2>
+           	<p>- PD</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+<!--Section trigger-->
+    <section class="section-trigger bg-white-section white-70 background-image" data-image="img/bg3.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="buttons-section center"><a class="btn accent-btn large-btn" href="#">Here are Ways to Transform Your Home</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--Section how we work-->
+    <section class="section-how-we-work bg-white-section background-image" data-image="img/bg2_2.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="heading-title center">
+              <h2>Here's Help for Your Home</h2>
+              <p>Please select below to book an appointment:</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Item-->
+          <div class="col-md-3 col-sm-6 col-xs-12 item-icon">
+            <div class="icon-container">
+              <div class="icon icon-circle"><i class="pe-7s-home"></i></div>
+            </div>
+            <h3>Blessing Option 1</h3>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+          </div>
+          <!-- Item-->
+          <div class="col-md-3 col-sm-6 col-xs-12 item-icon">
+            <div class="icon-container">
+              <div class="icon icon-circle"><i class="pe-7s-photo"></i></div>
+            </div>
+            <h3>Blessing Option 2</h3>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+          </div>
+          <!-- Item-->
+          <div class="col-md-3 col-sm-6 col-xs-12 item-icon">
+            <div class="icon-container">
+              <div class="icon icon-circle"><i class="pe-7s-map-2"></i></div>
+            </div>
+            <h3>Blessing Option 3</h3>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+          </div>
+          <!-- Item-->
+          <div class="col-md-3 col-sm-6 col-xs-12 item-icon">
+            <div class="icon-container">
+              <div class="icon icon-circle"><i class="pe-7s-global"></i></div>
+            </div>
+            <h3>Blessing Option 4</h3>
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+          </div>
+          <!-- Edn items-->
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!--Section contact with us-->
+    <section class="section-contact-with-us bg-dark-section background-image" id="contact" data-image="img/bg3_2.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="heading-title small-heading center">
+              <h2>Connect <span>with Terry</span></h2>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-wrap">
+              <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+58(667) 543 54 55</p>
+              <p class="street">359 CENTRAL MIRA STREET<br>VATUTINA 79 / 99 UKRAINE</p><a class="email" href="malito:"><i class="fa fa-envelope-o" aria-hidden="true"></i>Support@DOMIAN.COM</a><a class="email" href="malito:"><i class="fa fa-envelope-o" aria-hidden="true"></i>Support@DOMIAN.COM</a>
+              <!--Start social links-->
+              <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <!--End social links-->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-form">
+              <form class="contact-form-sub contact-form-bg">
+                <!-- Input name-->
+                <div class="col-md-6">
+                  <input class="form-control" type="text" required="" name="Name" placeholder=" Your name">
                 </div>
-            </div>  
-        </footer>
-        <!--Footer area end here-->
+                <!-- Input email-->
+                <div class="col-md-6">
+                  <input class="form-control" type="email" required="" name="Email" placeholder="Your email">
+                </div>
+                <!-- textarea-->
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="9" required="" name="Message" placeholder="Your message"></textarea>
+                  <p class="success-msg hidden notify">Your message has been send</p>
+                  <p class="error-msg hidden notify">Error sending message</p>
+                  <input class="btn btn-blue btn-form" type="submit" value="Send">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section our location-->
 
-
-        <!-- all js here -->
-        <!-- jquery latest version -->
-        <script src="js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/jquery.dlmenu.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <!-- tether js -->
-        <script src="js/tether.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- isotope js -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- magnific popup js -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
-        <!-- jarallax js -->
-        <script src="js/jarallax.min.js"></script>
-        <!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- plugins js -->
-        <script src="js/plugins.js"></script>
-        
-        
-        <!-- main js -->
-        <script src="js/main.js"></script>
-        <script>
-    function initMap() {
-    var uluru = {lat: -36.742775, lng:  174.731559};
-    var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    scrollwheel: false,
-    center: uluru
-    });
-    var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-    });
-    }
-</script>
-<script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmdG8C6ItElq5ipuFv6O9AE48wyZm_vqU&callback=initMap">
-</script>
-    </body>
+    <!-- Old browsers support--><!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            
+          <div class="col-md-3">
+            
+          </div>
+          <div class="col-md-3">
+            
+          </div>
+          <div class="col-md-3">
+            
+          </div>
+        </div>
+      </div>
+      <div class="down-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© 2020 All Rights Reserved.  -   Blessings for Homes</p>
+              <ul class="footer-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="smooth-scroll" href="#about">About</a></li>
+                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                <li><a class="smooth-scroll" href="#portfolio">Our works</a></li>
+                <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                <li> <a class="smooth-scroll" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--button to top-->
+    <div class="top icon-down toTopFromBottom"><a class="smooth-scroll" href="#top"><i class="pe-7s-angle-up"></i></a></div>
+    <!--end button to top-->
+    <!--Google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfIvcRb39yOu1OFOX2G0c4jemKpLgpJl0&amp;sensor=false"></script>
+    <!--Libs-->
+    <script src="js/libs.js"></script>
+    <!--Use scripts-->
+    <script src="js/common.js"></script>
+  </body>
 </html>
