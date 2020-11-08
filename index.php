@@ -1,4 +1,27 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "casspangell@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+
+                
 <!DOCTYPE html>
+
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
@@ -395,36 +418,38 @@
          
           <div class="col-md-6">
             <div class="contact-form">
-              <form class="contact-form-sub contact-form-bg">
-                <!-- Input name-->
-                <div class="col-md-6">
-                  <input class="form-control" type="text" required="" name="name" placeholder="Name">
-                </div>
+              <!-- <form class="contact-form-sub contact-form-bg" method="post" action=""> -->
+                <!-- Input name -->
+               <!--  <div class="col-md-6"> -->
+                <!--  <input class="form-control" type="text" required="" name="name" placeholder="Name">
+                </div> -->
                 <!-- Input email-->
-                <div class="col-md-6">
+              <!--   <div class="col-md-6">
                   <input class="form-control" type="email" required="" name="email" placeholder="Email">
-                </div>
+                </div> -->
                 <!-- textarea-->
-                <div class="col-md-12">
-                  <textarea class="form-control" rows="9" required="" name="message" placeholder="Message"></textarea>
+               <!-- <div class="col-md-12">
+                  <textarea class="form-control" rows="9" required="" name="messageentered" placeholder="Message"></textarea>
                   <p class="success-msg hidden notify">Your message has been sent</p>
                   <p class="error-msg hidden notify">Error sending message</p>
-                  <input class="btn btn-blue btn-form" type="submit" value="Send">
+                  <input class="btn btn-blue btn-form" type="submit" value="Send Form" name="submit">
                 </div>
-              </form>
-              <form action="" method="post">
-				First Name: <input type="text" name="first_name"><br>
-				Last Name: <input type="text" name="last_name"><br>
-				Email: <input type="text" name="email"><br>
-				Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-				<input type="submit" name="submit" value="Submit">
-			</form>
+              </form> -->
+
+<form action="" method="post">
+First Name: <input type="text" name="first_name"><br>
+Last Name: <input type="text" name="last_name"><br>
+Email: <input type="text" name="email"><br>
+Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--Section location-->
+    <!--Section our location-->
 
     <!-- Old browsers support--><!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
